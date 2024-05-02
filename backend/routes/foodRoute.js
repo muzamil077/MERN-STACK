@@ -44,6 +44,8 @@ router.get('/', async (request, response) => {
     }
 })
 
+
+
 router.delete('/:id', async (request, response) => {
     try {
         const { id } = request.params
