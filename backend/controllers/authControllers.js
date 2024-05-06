@@ -11,9 +11,7 @@ const router = express.Router();
 router.post("/register", async (req, res) => {
   try {
     // Extract email and password from request body
-    
     const { email, password } = req.body;
-
     // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
