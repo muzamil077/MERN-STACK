@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [food, setFood] = useState([]);
-  console.log(food, "foo-data");
+
 
   useEffect(() => {
     axios
