@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [food, setFood] = useState([]);
-  console.log(food, "food data");
+  console.log(food, "foo-data");
 
   useEffect(() => {
     axios
@@ -17,6 +17,7 @@ const Admin = () => {
         console.log(error);
       });
   }, []);
+
   return (
     <div className="bg-gray-500 rounded-lg">
       <div className="flex justify-start mx-4 mt-1">
